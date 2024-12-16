@@ -1,0 +1,122 @@
+/* Main container to align navbar and content */
+.page-container {
+  display: flex;
+  margin-left: 300px; /* Adjust margin based on your sidebar width */
+  padding: 20px;
+  background-color: #f7f7f7; /* Lighter background color for contrast */
+}
+
+/* Brand Info Container */
+.brand-info-container {
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+  transition: box-shadow 0.3s ease;
+}
+
+.brand-info-container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+}
+
+/* Header section inside brand info */
+.brand-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.brand-info-header h2 {
+  margin: 0;
+  font-size: 1.75rem; /* Larger font size for modern feel */
+  color: #333;
+  font-weight: 600; /* Bold heading */
+}
+
+.brand-info-header p {
+  margin: 0;
+  color: #777; /* Lighter text for subheading */
+  font-size: 1rem;
+}
+
+/* Apply Button */
+.apply-button {
+  background-color: #bf7d50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #a76441; /* Darker shade of #bf7d50 for hover effect */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+/* Brand Filters */
+.brand-info-filters {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Increase gap for better spacing */
+  margin-bottom: 25px;
+}
+
+.filter-input,
+.filter-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+  border-color: #bf7d50; /* Use theme color for input focus */
+  outline: none;
+}
+
+.search-button {
+  background-color: #bf7d50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #a76441; /* Darker shade on hover */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand Information List */
+.brand-info-list {
+  margin-top: 25px;
+}
+
+.brand-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-item:hover {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight elevation on hover */
+}

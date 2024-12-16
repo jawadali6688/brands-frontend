@@ -1,0 +1,152 @@
+/* General layout and spacing */
+.brands-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Section 1: Video */
+  .video-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .promo-video {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+  }
+  
+  .video-section h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Section 2: Our Products */
+  .our-products-section {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .our-products-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Section 3: Categories */
+  .categories-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .category-card {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .category-card img {
+    width: 100%;
+    height: 300px; /* Set a fixed height for uniform image size */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the container */
+    border-radius: 5px;
+  }
+  
+  
+  .category-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .category-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Section 4: Trending Brands */
+  .trending-brands-section {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .trending-brands-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .brands-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .brands-list a {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .brands-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  
+  /* Register button styling */
+  .register-brand-section {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .register-button {
+    padding: 12px 25px;
+    background-color: #d07b56;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #c0694b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .promo-video {
+      max-height: 300px;
+    }
+  
+    .categories-section {
+      grid-template-columns: 1fr;
+    }
+  
+    .brands-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .brands-list a {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

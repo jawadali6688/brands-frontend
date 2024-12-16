@@ -1,0 +1,261 @@
+.rent-page-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.background-image {
+  background-image: url('/assets/rent1.jpg'); /* Adjust the path to your background image */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  width: 100%;
+}
+
+/* Smaller and positioned background text for the slogan effect */
+.background-text2 {
+  position: absolute;
+  top: 20%; /* Adjust the top percentage to move the text higher */
+  left: 10%; /* Adjust the left percentage to align horizontally */
+  transform: translate(-10%, -10%);
+  font-size: 150px; /* Increase the font size */
+  font-family: 'Roboto Condensed', sans-serif; /* Change font to a cleaner, modern style */
+  color: rgba(255, 255, 255, 0.05); /* Further reduce the opacity for a lighter effect */
+  text-transform: uppercase; /* Optional: keep it uppercase */
+  font-weight: bold;
+  letter-spacing: 10px; /* Increase spacing for a more refined look */
+  z-index: 1; /* Keep it behind other elements */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Reduce the shadow effect for subtlety */
+}
+
+/* Button Section for Filter and Earn With Us */
+.button-section {
+  display: flex;
+  justify-content: space-between; /* Aligns buttons to opposite ends */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  background-color: transparent;
+  color: #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.earn-with-us-button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.filter-button i {
+  margin-right: 8px;
+}
+
+.earn-with-us-button:hover, .filter-button:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rent-products {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.rent-products h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Dynamically fit columns */
+  gap: 20px; /* Add space between cards */
+}
+
+.product-item {
+  margin: 0;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  background-color: #fff;
+}
+
+
+.product-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-details p:first-child {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.product-details p:last-child {
+  color: #888;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  gap: 10px;
+  border-top: 1px solid #eee;
+}
+
+.product-actions i {
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.product-actions i:hover {
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+  .product-item {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    width: 100%;
+    margin-bottom: 15px;
+}
+}
+.feedback-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 400px;
+}
+
+.feedback-chart .chart {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+}
+
+.chart-section {
+  height: 100%;
+}
+
+.chart-section.bad {
+  background-color: #ff0000;
+}
+
+.chart-section.poor {
+  background-color: #ff7f00;
+}
+
+.chart-section.average {
+  background-color: #ffd700;
+}
+
+.chart-section.good {
+  background-color: #00ff00;
+}
+
+.chart-section.excellent {
+  background-color: #00bfff;
+}
+
+.view-feedback {
+  margin-right: auto; /* This moves the View Feedback button to the far left */
+}
+/* Filter Section */
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adds space between the filter items */
+  flex-wrap: wrap; /* Allows the filters to wrap if there's not enough space */
+  margin-bottom: 20px;
+}
+
+/* Individual Filters */
+.filter-section select {
+  width: 200px; /* Set a fixed width to make sure all dropdowns are the same size */
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.pagination-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #555;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column; /* Stack filters vertically on small screens */
+    gap: 10px; /* Reduce gap between the filters */
+  }
+}

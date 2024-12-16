@@ -1,0 +1,59 @@
+.product-detail-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.product-detail {
+  display: flex;
+  max-width: 1000px;
+}
+
+.product-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-info {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  margin: 5px 0;
+}
+
+.rental-date {
+  margin-top: 20px;
+}
+
+.rent-button {
+  margin-top: 20px;
+  background-color: #ff7f50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.view-feedback-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-feedback-button:hover {
+  background-color: #ff7f50;
+}

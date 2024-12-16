@@ -1,0 +1,104 @@
+.admin-panel-container {
+    display: flex;
+    height: 80vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .header {
+    width: calc(100% - 250px); /* Adjusted width to account for sidebar */
+    background-color: #fff; /* Header background color: white */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px #FF6347;
+    position: fixed;
+    top: 0;
+    left: 250px; /* Adjusted for the sidebar */
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #1d1f27; /* Sidebar background color: dark */
+    color: #fff;
+    padding: 20px; /* Reduced padding to make space for logout button */
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; /* Align to the top */
+    left: 0;
+    height: 100%;
+    z-index: 1000; /* Ensure sidebar stays on top */
+    overflow-y: auto; /* Allow scrolling within sidebar */
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+    color: #ff8a8a; /* Main Menu color in bold */
+    font-weight: bold;
+  }
+  
+  .menu-item {
+    margin-bottom: 20px;
+  }
+  
+  .menu-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff; /* Main Brand and Main Rental text color bold white */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-item ul {
+    list-style: none;
+    padding-left: 20px; /* Adds indentation for nested items */
+    margin: 0;
+    border-left: 2px solid #555; /* Vertical line similar to the design */
+    background-color: transparent; /* Ensure background is transparent */
+  }
+  
+  .menu-item li {
+    margin-bottom: 10px;
+    background-color: transparent; /* Ensure background is transparent */
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: #f8f8f8; /* Submenu color in lighter grey */
+    font-size: 16px;
+    display: block;
+    padding: 5px 0;
+    background-color: transparent; /* Ensure background is transparent */
+  }
+  
+  .logout-button {
+    padding: 10px;
+    background-color: #FF6347; /* Logout button color */
+    color: #000; /* Logout button text color black */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 90px; /* Pushes the button to the bottom */
+    width: 100%; /* Ensures the button spans the sidebar width */
+  }
+  
+  .logout-button:hover {
+    background-color: #e67e22;
+  }
+  
+  main {
+    margin-left: 250px; /* Adjusted for the sidebar */
+    margin-top: 60px; /* Ensures content starts directly below the header */
+    padding: 20px; /* Adjust padding to align correctly */
+    background-color: #ffffff; /* Content area background color white */
+    color: #000; /* Ensure text color contrasts with background */
+    overflow-y: auto; /* Allows scrolling for content if needed */
+    position: fixed; /* Ensures content does not scroll behind sidebar */
+    top: 60px; /* Start below the header */
+    left: 250px; /* Start after the sidebar */
+    right: 0; /* Extend content to the right edge */
+    bottom: 0; /* Ensures it fills the available height */
+  }
+  

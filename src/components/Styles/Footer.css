@@ -1,0 +1,21 @@
+.footer-container {
+  background-color: #1A1A1A;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%; /* Change from 100vw to 100% */
+  position: relative;
+  bottom: 0;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+}

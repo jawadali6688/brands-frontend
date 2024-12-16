@@ -1,0 +1,108 @@
+/* Wishlist Page Styles */
+.wishlist-container {
+  padding: 40px;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.wishlist-container h2 {
+  font-size: 24px;
+  display: inline-block;
+  color: #333;
+}
+
+.wishlist-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.remove-all {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-all:hover {
+  background-color: grey;
+}
+
+/* Wishlist Grid Layout */
+.wishlist-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Wishlist Item Styles */
+.wishlist-item {
+  width: 22%; /* Matches the width used in RentPage for product items */
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.wishlist-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.wishlist-item img {
+  width: 100%;
+  height: 300px; /* Matches the height of product images in RentPage */
+  object-fit: cover;
+}
+
+.wishlist-item h3 {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.wishlist-item p {
+  color: #888;
+  font-size: 16px;
+}
+
+.add-to-cart, .remove-wish {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover, .remove-wish:hover {
+  background-color: grey;
+}
+
+@media (max-width: 1024px) {
+  .wishlist-item {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wishlist-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .wishlist-item {
+    width: 100%;
+    margin-bottom: 15px;
+}
+}
